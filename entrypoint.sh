@@ -1,2 +1,2 @@
 #!/bin/sh
-gunicorn app:app --bind=0.0.0.0:80
+gunicorn entry_point:app --bind=0.0.0.0:80
