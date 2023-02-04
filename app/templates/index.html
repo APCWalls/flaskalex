@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+
+{% block content %}
+    
+    <p class="important">
+      <h2>Esta es la web de compra-venta de Alejandro Paredes</h2>
+    </p>
+    <br>
+    <br>
+    <h4><a href="{{ url_for('routes.moviles') }}">PRODUCTOS</a></h4>
+    <br>
+    <br>
+    <h4><a href="{{ url_for('routes.personas') }}">USUARIOS</a></h4>
+{% endblock %}

@@ -1,0 +1,63 @@
+head {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(164, 107, 37);
+    font-size: 30px;
+}
+h2 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+body{
+    background-color: #f62b2b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: 400;
+}
+.bordetablat {
+    border: 1px solid black;
+    background-color: rgb(255, 150, 64);
+}
+.bordetabla {
+    border: 1px solid black;
+    background-color: rgb(255, 193, 142);
+}
+.titulo {
+    text-align: center;
+}
+.tablaproducto {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+}
+.tabla1 {
+    width: 100%;
+    background-color: #c5e7ff;
+}
+.insertar {
+    margin-left: 25%;
+    width: 50%;
+}
+.campo {
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    margin-left: 25%;
+
+}
+.boton {
+    background-color: rgb(93, 131, 218);
+    margin-left: 50%;
+}
+.tabla2{
+    width: 100%;
+    background-color: rgb(183, 255, 213);
+}
+.boton2{
+    background-color: rgb(111, 197, 122);
+    margin-left: 50%;
+}

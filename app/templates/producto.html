@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Test{% endblock %}
+{% block content %}
+<br>
+<br>
+<h1 class="titulo">PRODUCTOS EN VENTA</h1>
+<br>
+<br>
+<table class="tablaproducto">
+     <tr>
+        <td class="bordetablat">ID DEL PRODUCTO</td>
+        <td class="bordetablat">NOMBRE</td>
+        <td class="bordetablat">PRECIO</td>
+     </tr>
+
+    {% for producto in productos %}
+      <tr>
+        <td class="bordetabla">{{ producto.id }}</td>
+        <td class="bordetabla">{{ producto.producto }}</td>
+        <td class="bordetabla">{{ producto.precio }}</td>
+      </tr>
+      
+
+    {% endfor %}
+</table>
+<br>
+<div class="tabla1">
+<form class="insertar" action="/insertProducto" method="post">
+  <br>
+  <br>
+  <ul>
+      <label class="campo" for="nombre">Nombre del producto:</label>
+      <input type="text" id="name" name="producto">
+      <br>
+      <br>
+      <label class="campo" for="precio">Precio:</label>
+      <input type="number" id="number" name="precio">
+  </ul>
+  <br>
+  <input class="boton" type="submit" value="Añadir" class="btn-prymary">
+  <br>
+  <br>
+</form>
+</div>
+
+<div class="tabla2">
+<form class="insertar" action="/borrarProducto" method="post">
+  <br>
+  <br>
+  <ul>
+      <label class="campo" for="idproducto">ID DEL PRODUCTO:</label>
+      <input type="number" id="id" name="idproducto">
+  </ul>
+  <br>
+  <input class="boton2" type="submit" value="Borrar" class="btn-prymary">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</form>
+</div>
+{% endblock %}

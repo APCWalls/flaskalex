@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Test{% endblock %}
+
+
+{% block content %}
+<br>
+<br>
+<h1 class="titulo">CREACION DE USUARIOS</h1>
+<br>
+<br>
+<table class="tablaproducto">
+     <tr>
+        <td class="bordetablat">ID DEL USUARIO</td>
+        <td class="bordetablat">NOMBRE</td>
+        <td class="bordetablat">CORREO</td>
+     </tr>
+
+    {% for usuario in usuarios %}
+      <tr>
+        <td class="bordetabla">{{ usuario.id }}</td>
+        <td class="bordetabla">{{ usuario.nombre }}</td>
+        <td class="bordetabla">{{ usuario.correo }}</td>
+      </tr>
+      
+
+    {% endfor %}
+</table>
+<br>
+<div class="tabla1">
+<form class="insertar" action="/insertUsuario" method="post">
+  <br>
+  <br>
+  <ul>
+      <label class="campo" for="nombre">Nombre:</label>
+      <input type="text" id="name" name="nombre">
+      <br>
+      <br>
+      <label class="campo" for="correo">Correo electrónico:</label>
+      <input type="email" id="mail" name="correo">
+   </ul>
+   <br>
+  <input class="boton" type="submit" value="Añadir" class="btn-prymary">
+  <br>
+  <br>
+</form>
+</div>
+
+<div class="tabla2">
+<form class="insertar" action="/borrarUsuario" method="post">
+  <br>
+  <br>
+  <ul>
+      <label class="campo" for="idusuario">ID DEL USUARIO:</label>
+      <input type="number" id="id" name="idusuario">
+  </ul>
+  <br>
+  <input class="boton2" type="submit" value="Borrar" class="btn-prymary">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</form>
+</div>
+{% endblock %}
