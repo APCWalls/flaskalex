@@ -2,7 +2,7 @@ name: Server CI workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   # unit-tests:
